@@ -1,11 +1,11 @@
 /* eslint-disable */
 import axios from 'axios';
 
-/*const API_URL = 'http://localhost:8000'; /* http://groyce.pythonanywhere.com/ or http://localhost:8000 */
+/*const API_URL = 'http://localhost:8000'; /* http://groyce.pythonanywhere.com/ or http://localhost:8000 */   
 
-const API_URL =  'http://groyce.pythonanywhere.com/';
+const API_URL =  'http://groyce.pythonanywhere.com/'; 
 
-/* const API_URL = 'http://localhost:8000';  */
+/* const API_URL = 'http://localhost:8000'; */ 
 
 export class APIService {
   constructor() {
@@ -50,7 +50,7 @@ export class APIService {
      return axios.delete(url, {headers: headers});
   }
 
-
+  
   getInvestment(param_pk) {
     const url = `${API_URL}/api/investments/${param_pk}`;
     let jwtToken = localStorage.getItem('token');
