@@ -158,7 +158,7 @@
         router.push('/stock-create/' + stock.pk);
       },
       deleteStock(stock) {
-        apiService.deletestock(stock.pk).then(response => {
+        apiService.deleteStock(stock.pk).then(response => {
           if (response.status === 204) {
             alert("Stock deleted");
             this.showMsg = 'deleted';

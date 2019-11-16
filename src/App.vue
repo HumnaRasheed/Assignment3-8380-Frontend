@@ -66,7 +66,6 @@
       },
 
 
-
       viewStocks() {
         router.push('/stock-list');
       },
