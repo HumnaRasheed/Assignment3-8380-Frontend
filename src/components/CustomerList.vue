@@ -14,7 +14,6 @@
       </v-layout>
 
 
-
       <v-layout column align-center>
         <h2>
          Customer Information
@@ -22,10 +21,9 @@
       </v-layout>
 
 
-
-
        <v-layout column align-center>
        <v-flex xs6 sm8 md7>
+
        <v-alert v-if="showMsg === 'new'"
                 dismissible
         :value="true"
@@ -33,12 +31,14 @@
       >
         New customer has been added.
       </v-alert>
+
       <v-alert v-if="showMsg === 'update'" dismissible
         :value="true"
         type="success"
       >
         Customer information has been updated.
       </v-alert>
+
          <v-alert v-if="showMsg === 'deleted'" dismissible
         :value="true"
         type="success"
