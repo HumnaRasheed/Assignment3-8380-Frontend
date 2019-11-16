@@ -7,7 +7,7 @@ import axios from 'axios';
 
 /* const API_URL = 'http://localhost:8000' ;  */
 
- const API_URL = 'https://assign3-8380-backend.herokuapp.com/'; 
+ const API_URL = 'https://assign3-8380-backend.herokuapp.com'; 
 
 export class APIService {
   constructor() {
